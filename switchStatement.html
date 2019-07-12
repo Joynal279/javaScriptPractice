@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Javascript Practice
+    </title>
+  </head>
+
+  <body>
+  <div>
+    <input id="codeText" type="text">
+    <button onclick="checkCoding()">Check</button>
+    <div id="show">Output: </div>
+  </div>
+    <script>
+        function checkCoding(){
+            var text;
+            var coding=document.getElementById("codeText").value;
+            switch(coding){
+              case "php":
+              document.getElementById("show").innerHTML=coding;
+              break;
+              case "java":
+              document.write("java is a object oriented language");
+              break;
+              default:
+              document.write("unknown");
+            }
+
+        }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Javascript Practice
+    </title>
+  </head>
+
+  <body>
+  <div id="show"
+  </div>
+    <script>
+        var person={
+                      firstName:"Joynal",
+                      lastName:"Abedin",
+                      age:22,
+                      func:function(){
+                        return this.firstName+" "+this.lastName;
+                      }
+
+
+
+        }
+        document.write(person.age);
+        document.write("<br>");
+        var x=10;
+        var y="joynal";
+        var z=new String("Abedin");
+        document.write(typeof(x));
+        document.write("<br>");
+        document.write(typeof(y));
+        document.write("<br>");
+        document.write(typeof(z));
+        document.write("<br>");
+        document.write(typeof(null));
+
+        var color=["green","blue","yellow","red","white"];
+        for(i in color){
+          document.write(color[i]+"<br>");
+        }
+
+    </script>
+  </body>
+</html>

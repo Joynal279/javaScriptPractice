@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prototype/Inheritance</title>
+  </head>
+  <body>
+        <script>
+                function totalNum(a,b){
+                        this.x=a;
+                        this.y=b;
+                        this.sum=function(){
+                          return this.x+this.y;
+                        }
+                }
+                function productNum(a,b){
+                  this.x=a;
+                  this.y=b;
+                  this.product=function(){
+                    document.write("yes we are exist :");
+                    return this.x*this.y;
+                  }
+                }
+                totalNum.prototype=new productNum();
+
+                var obj=new totalNum(5,10);
+                document.write(obj.product());
+        </script>
+  </body>
+</html>

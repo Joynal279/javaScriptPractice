@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Get text from container</title>
+  </head>
+  <body>
+      <div id="joynal">
+            Joynal Abedin
+      </div>
+      <hr/>
+
+      <script>
+          var div1=document.getElementById("joynal").innerText;
+          document.write(div1);
+          var div2=document.querySelector("div").innerText;
+          document.write("<br>");
+          document.write("<hr/>")
+          document.write(div2);
+          var div3=document.querySelectorAll("div")[0].innerText;
+          document.write("<br>");
+          document.write("<hr/>");
+          document.write(div3);
+          var div4=document.getElementsByTagName("div")[0].innerText;
+          document.write("<br>");
+          document.write("<hr>");
+          document.write(div4);
+      </script>
+
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Properties and Method</title>
+  </head>
+  <body>
+      <script>
+              function total(a){
+                this.x=a;
+                this.y=22;
+                this.sum=function(){
+                  return this.x+this.y;
+                }
+              }
+
+              function totalProduct(){
+                x=20;
+                y=33;
+                sumProduct=function(){
+                document.write(y);
+                }
+
+
+              }
+              //var obj2=new totalProduct();
+              //obj2.sumProduct();
+              document.write("<br>");
+              var obj=new total(10);
+              document.write(obj.sum());
+      </script>
+  </body>
+</html>

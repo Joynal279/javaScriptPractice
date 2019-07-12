@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>this keyword</title>
+  </head>
+  <body>
+      <script>
+            function liveProject(){
+                  var x=39;
+                  this.y=200;
+                  this.z=400;
+                  this.sum=function(){
+                    return this.y+this.z;
+                  }
+            }
+            var obj=new liveProject();
+            document.write("First sum Output : "+obj.sum());
+            document.write("<br>");
+            function totalNum(a,b){
+              this.x=a;
+              this.y=b;
+              this.sum=function(){
+                return this.x+this.y;
+              }
+            }
+            var obj2=new totalNum(5,4);
+            document.write("Second sum Output : "+obj2.sum());
+      </script>
+  </body>
+</html>
